@@ -16,6 +16,10 @@ public class DynamicArray<T extends Type> extends Array<T> {
         super(values.get(0).getTypeAsString() + "[]", values);
     }
 
+    public DynamicArray(List<T> values, boolean isEmpty) {
+        super("String" + "[]", values);
+    }
+
     private DynamicArray(String type) {
         super(type);
     }
